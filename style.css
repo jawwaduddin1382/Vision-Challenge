@@ -41,7 +41,7 @@ body{
     padding-top: 0;
     font-size: 60px;
     color: #039682;
-
+    
 }
 .score-text{
     color: #039682;
@@ -121,10 +121,11 @@ body{
     }
     
     .game__bord{
+        height: 70vh;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        scr
+        
     }
     
     .best__score,.best-text{
