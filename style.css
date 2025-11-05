@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: #d8d7d7;
+}
+
+.game__header--box{
+    background-color:#039682;
+    
+}
+
+.game__header{
+    color: #ffffff;
+    padding: 12px;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.game__bord{
+    background-color: #d8d7d7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 74vh;
+}
+@media (max-width:640px) {
+    .game__header{
+        padding: 5px;
+    }
+    .game__bord{
+       
+        flex-direction: column;
+    }
+    
+    
+    .best__score,.best-text{
+       display: none;
+        order:1;
+    }
+    .score-text{
+        transform: translateY(-10px);
+    }
+    .score{
+       
+        order: 2;
+        
+    }
+    .game__container{
+       
+        order: 3;
+    }
+} 
+
+
+
+.best__score,.score{
+    font-size: 80px;
+    color:#039682;
+}
+.time{
+    padding-top: 0;
+    font-size: 60px;
+    color: #039682;
+
+}
+.score-text{
+    color: #039682;
+    font-size: 35px;
+    font-family: sans-serif;
+
+}
+.game__container{
+    background-color: #ffffff;
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    padding: 5px;
+    position: relative;
+}
+
+.cell{
+    cursor:pointer;
+}
+
+
+.game__btn{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    
+    
+}
+
+.pass__btn,.restart__btn{ 
+    width: 150px;
+    height: 40px;
+    background-color: #0a5a68;
+    border: none;
+    border-radius:16px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.restart__btn{
+    background-color: #039682;
+}
+.gameover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(2, 104, 95);
+    cursor: pointer;
+    
+    /* display: none; */
+    /* transform: translate(50%,50%); */
+}
+
